@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vẻ Đẹp Của Toán Học</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(180deg, #0d1a2d 0%, #1a2f4d 25%, #2a4a7c 50%, #4a7bc8 75%, #6a9de8 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            position: relative;
+        }
+        nav {
+            display: flex;
+            gap: 80px;
+            padding: 40px 100px;
+            background: transparent;
+            position: relative;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #b8d4ff;
+            text-decoration: none;
+            font-size: 42px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #c8deff;
+            font-size: 120px;
+            font-weight: bold;
+            line-height: 1.2;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+            margin-bottom: 40px;
+        }
+
+        .title-line1 {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        .title-line2 {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        .title-line3 {
+            font-size: 140px;
+            letter-spacing: 8px;
+        }
+
+        .next-button {
+            margin-top: 60px;
+            padding: 18px 60px;
+            font-size: 24px;
+            color: #a8c5ff;
+            background: rgba(168, 197, 255, 0.2);
+            border: 2px solid rgba(168, 197, 255, 0.4);
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .next-button:hover {
+            background: rgba(168, 197, 255, 0.3);
+            border-color: rgba(168, 197, 255, 0.6);
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 768px) {
+            nav {
+                gap: 30px;
+                padding: 20px 30px;
+                flex-wrap: wrap;
+            }
+
+            nav a {
+                font-size: 24px;
+            }
+
+            h1 {
+                font-size: 60px;
+            }
+
+            .title-line1 {
+                font-size: 40px;
+            }
+
+            .title-line2 {
+                font-size: 32px;
+            }
+
+            .title-line3 {
+                font-size: 70px;
+            }
+
+            .next-button {
+                padding: 12px 40px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="content.html">Content</a>
+        <a href="others.html">Others</a>
+    </nav>
+    <div class="main-content">
+        <h1>
+            <div class="title-line1">VẺ ĐẸP</div>
+            <div class="title-line2">CỦA</div>
+            <div class="title-line3">TOÁN HỌC</div>
+        </h1>
+        
+        <a href="next.html" class="next-button">Next ></a>
+    </div>
+</body>
+</html>
