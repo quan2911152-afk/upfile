@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    z-index: 10;
+    padding: 1em 2em;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #34d399;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #34d399;
+  transition: width 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.nav a.active::after {
+  width: 100%;
+}
+body {
+    position: relative;
+    overflow: scroll;
+    background: linear-gradient(to bottom, #000000, #1a2d80);
+    height: 100vh;
+    width: 100vw;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+    opacity: 0.1;
+    animation: float-bg 30s linear infinite;
+    z-index: 0;
+}
+
+@keyframes float-bg { 
+    from { background-position: 0 0; } 
+    to { background-position: 1000px 1000px; } 
+}
+
+#starsCanvas {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes fadeIn { 
+    from { opacity: 0; transform: translateY(20px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
+
+@keyframes pulse { 
+    from { opacity: 0.85; } 
+    to { opacity: 1; } 
+}
+
